@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrainingMainWindow</class>
+ <widget class="QMainWindow" name="TrainingMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1021</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="trainingCentralWidget">
+   <widget class="QFrame" name="mainFrame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1021</width>
+      <height>592</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+	background-color: rgb(240, 240, 240);
+	border: none;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="infoFrame">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>961</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+	background-color: rgb(0, 70, 190);
+	border: none;
+	border-radius: 7px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="goBackButton">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>25</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 7px;
+}
+
+QPushButton:hover {
+	background-color: rgb(220, 220, 220);
+}
+
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../icons/icons.qrc">
+        <normaloff>:/goBackIcon_B.png</normaloff>:/goBackIcon_B.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nameOfTheDictionary">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat SemiBold</family>
+        <pointsize>19</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	border: none;
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>My Words</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="descriptionOfTheDictionary">
+      <property name="geometry">
+       <rect>
+        <x>92</x>
+        <y>50</y>
+        <width>471</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat Medium</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	border: none;
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Dictionary for learning new words in English</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="closeThewindowButton">
+      <property name="geometry">
+       <rect>
+        <x>895</x>
+        <y>25</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 7px;
+}
+
+QPushButton:hover {
+	background-color: rgb(255, 123, 123);
+}
+
+QPushButton:pressed {
+	background-color: rgb(255, 103, 103);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../icons/icons.qrc">
+        <normaloff>:/closeSomethingIcon_B.png</normaloff>:/closeSomethingIcon_B.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>10</width>
+        <height>10</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="minimizeTheWindowButton">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>25</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 7px;
+}
+
+QPushButton:hover {
+	background-color: rgb(220, 220, 220);
+}
+
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../icons/icons.qrc">
+        <normaloff>:/minimizeWindowIcon_B.png</normaloff>:/minimizeWindowIcon_B.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>10</width>
+        <height>10</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>961</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 7px;
+}</string>
+     </property>
+     <widget class="QWidget" name="helpWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>171</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+	background-color: none;
+	border: none;
+	border-radius: 7px;
+}</string>
+      </property>
+      <widget class="QLabel" name="time">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Montserrat</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	background-color: none;
+	border: none;
+}</string>
+       </property>
+       <property name="text">
+        <string>9:29:56</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="separatedLine">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>131</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	background-color: rgb(240, 240, 240);
+	border: none;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="trainingWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>711</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+	background-color: none;
+	border: none;
+	border-radius: 7px;
+}</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

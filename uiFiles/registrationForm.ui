@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegistrationWindow</class>
+ <widget class="QMainWindow" name="RegistrationWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1031</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1031</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1031</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="registrationCentralWidget">
+   <widget class="QFrame" name="mainFrame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+	background-color: none;
+	border: none;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="backgroundImage">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>40</y>
+       <width>1032</width>
+       <height>681</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	background-color: none;
+	border: none;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../icons/icons.qrc">:/backgroundImage.jpg</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QFrame" name="movingFrame">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>0</y>
+       <width>1032</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+	background-color: rgb(255, 255, 255);
+	border: none;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="closeTheWindowButton">
+      <property name="geometry">
+       <rect>
+        <x>991</x>
+        <y>0</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: none;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: rgb(255, 123, 123);
+}
+
+QPushButton:pressed {
+	background-color: rgb(255, 103, 103);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../icons/icons.qrc">
+        <normaloff>:/closeSomethingIcon_B.png</normaloff>:/closeSomethingIcon_B.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>10</width>
+        <height>10</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="minimizeTheWindowButton">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>0</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: none;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: rgb(220, 220, 220);
+}
+
+QPushButton:pressed {
+	background-color: rgb(200, 200, 200);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../icons/icons.qrc">
+        <normaloff>:/minimizeWindowIcon_B.png</normaloff>:/minimizeWindowIcon_B.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>10</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="informationFrame">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>461</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+	background-color: rgba(255, 255, 255, 220);
+	border: none;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="programIcon">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>60</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: none;
+	border: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../icons/icons.qrc">
+        <normaloff>:/programIcon.png</normaloff>:/programIcon.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="programNameLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>60</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: none;
+	color: rgb(84, 110, 122);
+	border: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>ELFAY</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="programNameLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>80</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: none;
+	border: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>PRODUCTION</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="emailAddressLabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>210</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: none;
+	border: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>E-mail address</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="passwordLabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>300</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: none;
+	border: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="blankForTheAddress">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>240</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>12</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	border-radius: 7px;
+}</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>you@example.com</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="createAnAccountButton">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>390</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border-radius: 25px;
+	background-color: rgb(0, 98, 255);
+	color: white;
+}
+
+QPushButton:hover {
+	background-color: rgb(0, 115, 255);
+}
+
+QPushButton:pressed {
+	background-color: rgb(0, 90, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Create an account</string>
+      </property>
+      <property name="shortcut">
+       <string>Return</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="blankForThePassword">
+      <property name="geometry">
+       <rect>
+        <x>58</x>
+        <y>330</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>12</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 7px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Your password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="typeOfTheWindowLabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>130</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>35</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: none;
+	border: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>SIGN UP</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="haveAnAccountLabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>470</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgb(0, 0, 0);
+	background-color: none;
+	border: none;
+}</string>
+      </property>
+      <property name="text">
+       <string>Have an account?</string>
+      </property>
+     </widget>
+     <widget class="Line" name="separatedLine_1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>270</y>
+        <width>341</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: gray;
+border: none;</string>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="separatedLine_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>360</y>
+        <width>341</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: gray;
+border: none;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="openSignInWindowButton">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>470</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgba(0, 136, 255, 255);
+	background-color: none;
+	border: none;
+}
+
+QPushButton:hover {
+	text-decoration: underline;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Sign in</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="showAndHidePasswordButton">
+      <property name="geometry">
+       <rect>
+        <x>359</x>
+        <y>332</y>
+        <width>31</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: none;
+	border: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../icons/icons.qrc">
+        <normaloff>:/hideIcon_B.png</normaloff>:/hideIcon_B.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
